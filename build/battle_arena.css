@@ -1,0 +1,422 @@
+.new_player {
+    grid-area: new_player;
+    font-family:'Garamond';
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.respawn {
+    grid-area: respawn;
+    font-family:'Garamond';
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.delete_player {
+    grid-area: delete_player;
+    font-family:'Garamond';
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.attack {
+    grid-area: attack;
+}
+
+.move {
+    grid-area: move;
+}
+
+.attack_keys {
+    grid-area: attack_keys;
+    text-align: center;
+}
+
+.move_keys {
+    grid-area: move_keys;
+    text-align: center;
+}
+
+.player_name {
+    grid-area: player_name;
+    visibility: hidden;
+    align-self: center;
+}
+
+.name {
+    grid-area: name;
+    visibility: hidden;
+    align-self: center;
+}
+
+.player_health {
+    grid-area: player_health;
+    visibility: hidden;
+    align-self: center;
+}
+
+.health {
+    grid-area: health;
+    visibility: hidden;
+    align-self: center;
+}
+
+.player_attack {
+    grid-area: player_attack;
+    visibility: hidden;
+    align-self: center;
+}
+
+.attack {
+    grid-area: attack;
+    visibility: hidden;
+    align-self: center;
+}
+
+.player_defense {
+    grid-area: player_defense;
+    visibility: hidden;
+    align-self: center;
+}
+
+.defense {
+    grid-area: defense;
+    visibility: hidden;
+    align-self: center;
+}
+
+.avatar {
+    grid-area: avatar;
+    background-image: url("./battlearena-avatars/my_character-1.png");
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    visibility: hidden;
+}
+
+.options {
+    grid-area: options;
+    display: grid;
+    grid-template-areas:
+    'new_player new_player'
+    'respawn respawn'
+    'delete_player delete_player'
+    'avatar avatar'
+    'player_name name'
+    'player_health health'
+    'player_attack attack'
+    'player_defense defense'
+    '. .';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 10% 25% 8% 8% 8% 8% 13%;
+    padding: 10px;
+    background-image: url("stone_texture.jpg");
+    background-repeat: no-repeat;
+}
+
+.space_key {
+    grid-area: space_key;
+    background-image: url("space.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.wasd_keys {
+    grid-area: wasd_keys;
+    background-image: url("keys.png");
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+}
+
+.view {
+    grid-area: view;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 2px;
+    padding: 5px;
+    border: black;
+    border-top-style: solid;
+}
+
+.view > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+}
+
+.game {
+    grid-area: game;
+    background-color:black;
+    border: black;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.game_createPlayer_message {
+    text-align: center;
+    padding: 175px 0;
+    font-size: 25px;
+}
+
+.name_label {
+    grid-area: name_label;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: black;
+}
+
+.introduce_name {
+    grid-area: introduce_name;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.introduce_name_txt {
+    font-size: 20px;
+    font-family:'Garamond';
+    border-radius: 7px;
+    padding: 5px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.choose_avatar {
+    grid-area: choose_avatar;
+    color: black;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.left {
+    grid-area: left;
+    background-image: url("left.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 17%;
+    background-position: center;
+}
+
+.right {
+    grid-area: right;
+    background-image: url("right.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 20%;
+    background-position: center;
+}
+
+.character {
+    grid-area: character;
+    background-repeat: no-repeat;
+    background-size: 120% 90%;
+    background-position: 50% 15%;
+}
+
+.create_player {
+    grid-area: create_player;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.start {
+    grid-area: start;
+    width: 50%;
+    font-family:'Garamond';
+    font-size: 20px;
+    justify-self: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #a81407;
+}
+
+.game_createPlayer {
+    background-color:darkgray;
+    margin: 0px;
+    height:100%;
+    font-size: 20px;
+    display: grid;
+    grid-template-areas:
+    'create_player create_player create_player create_player'
+    'name_label introduce_name introduce_name .'
+    'choose_avatar choose_avatar . .'
+    'left character character right'
+    'start start start start';
+    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-rows: 15% 10% 10% 50% 10%;
+    grid-gap: 2px;
+}
+
+.top {
+    grid-area: top;
+    align-self: flex-start;
+    text-align: center;    
+    color: white;
+    font-weight: bolder;
+}
+
+.left {
+    grid-area: left;
+    justify-self: left;
+    align-self: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.right {
+    grid-area: right;
+    justify-self: right;
+    align-self: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.bottom {
+    grid-area: bottom;
+    align-self: flex-end;
+    color: white;  
+    text-align: center;   
+    font-weight: bolder;
+}
+
+.compass {
+    grid-area: compass;
+    display: grid;
+    grid-template-areas: 
+    '. top .'
+    'left . right'
+    '. bottom .';
+    grid-template-rows: 33% 34% 33%;
+    grid-template-columns: 33% 34% 33%;
+    background-image: url("compass2.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.compass_keys {
+    grid-area: compass_keys;
+    display: grid;
+    grid-template-areas:
+    'compass .'
+    'compass attack_keys'
+    'compass space_key'
+    'move_keys move_keys'
+    'wasd_keys wasd_keys';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 15% 10% 10% 40%;
+    grid-gap: 2px;
+    padding: 10px;
+    background-image: url("stone_texture.jpg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.grid {
+    grid-area: grid;
+    display: grid;
+    grid-template-areas:
+    'options game compass_keys'
+    'options game view';
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 49% 51%;
+    border: black;
+    border-style: solid;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    '. . .'
+    '. grid .'
+    '. . .';
+    grid-template-columns: 17% 66% 17%;
+    grid-template-rows: 29% 60% 11%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    background-image: url("darklight_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family:'Garamond';
+    color: lightgray;
+}
+
+.visor {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    'dead dead dead dead dead'
+    '. . . . . '
+    'message message message message message'
+    '. enemy2 enemy1 enemy3 .'
+    '. . . . .';
+    grid-template-columns: 11% 26% 26% 26% 11%;
+    grid-template-rows: 14% 2% 14% 45% 35%;
+}
+
+.enemy1 {
+    grid-area: enemy1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% 100%;
+    visibility: hidden;
+}
+
+.enemy2 {
+    grid-area: enemy2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% 100%;
+    visibility: hidden;
+}
+
+.enemy3 {
+    grid-area: enemy3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% 100%;
+    visibility: hidden;
+}
+
+.dead {
+    grid-area: dead;
+    font-family:'Garamond';
+    font-size: 22px;
+    justify-self: center;
+    font-weight: bolder;
+    margin-top: 5%;
+    color: red;
+    visibility: hidden;
+}
+
+.message {
+    grid-area: message;
+    font-family:'Garamond';
+    font-size: 18px;
+    justify-self: center;
+    color: #ccccff;
+    visibility: hidden;
+}
+
+.enemyHealth {
+    font-family:'Garamond';
+    font-size: 15px;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+.minimapSquare {
+    background-color: grey;
+}
